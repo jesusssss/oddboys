@@ -12,4 +12,6 @@ $(document).ready(function() {
     }, function() {
         $(".cat").removeClass("greyScale");
     });
+
+    console.log($(window).width());
 });
