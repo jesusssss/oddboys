@@ -151,9 +151,9 @@ header {
   }
   .categories {
     padding: 25px;
-    .heading {
-      margin-bottom: 60px;
-    }
+    margin-top: 40px;
+    position: relative;
+    margin-bottom: 20px;
     .cat {
       height: 193px;
       cursor: pointer;
@@ -161,8 +161,11 @@ header {
       transition: all .5s;
       margin-bottom: 80px;
       width: 290px;
-      margin-right: 20px;
+      margin-right: 17px;
       float: left;
+      &:nth-of-type(1n+5) {
+        margin-bottom: 10px;
+      }
       div {
         position: absolute;
         width: 80%;
@@ -225,5 +228,58 @@ header {
       background: url("../img/categories/bukser.jpg");
       margin-right: 0;
     }
+  }
+}
+.bigButton {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  font-family: 'Lobster', Arial, sans-serif;
+  font-size: 1.875em;
+  color: @white;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #191818;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1) inset;
+  img {
+    vertical-align: middle;
+  }
+}
+.facebookBtn {
+  background: @facebook;
+  transition: all .4s;
+  margin-bottom: 20px;
+  &:hover {
+    transition: all .4s;
+    background: #1c2b80;
+  }
+}
+
+/* Global */
+.dashed {
+  padding-top: 75px !important;
+  border: 3px dashed #fff;
+  .heading {
+    position: absolute;
+    background: url("../img/background.jpg") no-repeat center center;
+    background-size: 320px 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -20px;
+  }
+  .end {
+    font-family: 'Lobster', Arial, sans-serif;
+    font-size: 1.250em;
+    color: @white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -10px;
+    background: url("../img/background.jpg") no-repeat center center;
+    background-size: 140px 10px;
   }
 }
