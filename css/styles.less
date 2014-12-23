@@ -105,6 +105,33 @@ header {
         &:last-of-type {
           margin-right: 0;
         }
+        ul {
+          display: none;
+          top: -100%;
+          width: 100%;
+          position: absolute;
+          background: @brown;
+          z-index: 999;
+          min-height: 200px;
+          padding: 10px;
+          li {
+            a {
+              color: #fff;
+              text-decoration: none;
+              border: none;
+              padding: 5px;
+              &:hover {
+                border: none;
+                color: @grey;
+              }
+            }
+          }
+        }
+        &:hover > ul {
+          display: block;
+          transition: top .4s;
+          top: 35px;
+        }
       }
     }
   }
