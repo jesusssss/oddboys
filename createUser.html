@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Open sans \ Lobster  || Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/createUser.less" />
+    <link rel="stylesheet" type="text/css" href="css/unsemantic-grid-base.css" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+    <script>
+        var ADAPT_CONFIG = {
+            path: 'css/',
+            dynamic: true,
+            range: [
+                '0 to 767px = unsemantic-grid-mobile.css',
+                '767px = unsemantic-grid-desktop.css'
+            ]
+        };
+    </script>
+
+    <script src="js/less.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/adapt.min.js"></script>
+    <script type="text/javascript" src="js/jquery.noisy.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!-- TODO Make seo title -->
+    <title>
+        Odd Boys Soceity
+    </title>
+</head>
+<!-- TODO class 'home' on frontpage else class 'page' -->
+<body class="home">
+<div id="top" class="noise">
+    Shop away minions, shop away
+</div>
+<div class="wrapper topHeader">
+    <div class="grid-50 mobile-grid-100 partners">
+        <img src="img/partners/nike.png" alt="Nike"/>
+        <img src="img/partners/duck.png" alt="Nike"/>
+        <img src="img/partners/jordan.png" alt="Nike"/>
+        <img src="img/partners/streetammo.png" alt="Nike"/>
+    </div>
+    <div class="grid-50 mobile-grid-100">
+        <div class="topBasket">
+            <a href="javascript:void(0);">
+                Gå til kurv
+            </a>
+            <a id="basketIcon" href="javascript:void(0);">
+            </a>
+            <span id="basketCount">
+                0
+            </span>
+            <span id="basketPrice">
+                999 DKK
+            </span>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<header class="noise">
+    <div class="wrapper">
+        <div class="grid-30 mobile-grid-50">
+            <a href="javascript:void(0);">
+                <img src="img/logo.png" alt="Odd Boys Soceity"/>
+            </a>
+        </div>
+        <div class="grid-70 mobile-grid-50">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu Point</a>
+                        <ul>
+                            <li><a href="#">Menu point</a></li>
+                            <li><a href="#">Menu point</a></li>
+                            <li><a href="#">Menu point</a></li>
+                            <li><a href="#">Menu point</a></li>
+                            <li><a href="#">Menu point</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu Point</a></li>
+                    <li><a href="#">Menu Point</a></li>
+                    <li><a href="#">Menu Point</a></li>
+                    <li><a href="#">Menu Point</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</header>
+<section class="content">
+<div class="wrapper">
+    <div class="pageTitle">
+        <h1>Opret bruger</h1>
+    </div>
+
+    <div class="createUserHolder noise">
+        <div class="createUserOptionHolder grid-100">
+            <div class="createUserLeft grid-45 mobile-grid-100">
+                <p>
+                    Indtast oplysninger
+                </p>
+
+                <form action="#" method="post">
+                    <input type="text" name="username" placeholder="Brugernavn..."/>
+                    <input type="text" name="password" placeholder="Kodeord..."/>
+                    <input type="text" name="password2" placeholder="Bekræft kodeord..."/>
+                    <input type="text" name="email" placeholder="Email..."/>
+                    <input type="submit" name="User-Action-CreateUser" class="noise orangeButton bigButton"/>
+                </form>
+            </div>
+            <div class="middleText">
+                Eller
+            </div>
+            <div class="createUserRight grid-45 mobile-grid-100">
+                <a href="http://facebook.com" target="_blank" class="bigButton facebookBtn noise">
+                    Login med facebook
+                </a>
+            </div>
+        </div>
+        <div class="createUserText grid-100">
+            Opret bruger og få adgang til en helt ny verden af streetwear tøj.<br/>
+            Du kan også selv sælge dit eget tøj. Andre vil helt sikkert gerne have fingrene i det!
+        </div>
+    </div>
+</div>
+</section>
+<div class="wrapper">
+    <footer>
+        <div class="grid-30">
+            <div class="footerDesc">
+                Kategorier:
+            </div>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </div>
+        <div class="grid-30">
+            <div class="footerDesc">
+                Link:
+            </div>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </div>
+        <div class="grid-30 socials">
+            <div class="footerDesc">
+                Join the fun:
+            </div>
+            <a href="#">
+                <img src="img/socials/facebook.png" alt="Facebook"/>
+            </a>
+            <a href="#">
+                <img src="img/socials/twitter.png" alt="Twitter"/>
+            </a>
+            <a href="#">
+                <img src="img/socials/googlePlus.png" alt="Google plus"/>
+            </a>
+            <a href="#">
+                <img src="img/socials/youtube.png" alt="Youtube"/>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+</div>
+</body>
+</html>
